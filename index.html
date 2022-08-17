@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/85a71b3b53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="/images/Dhinesh..png" style="cursor: pointer;" class="logo" alt="My-Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span> Dhinesh </span>from India</h1>
+        </div>
+    </div>
+</div>    
+<!-- ----------------------------about------------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/images/profile.svg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" style="margin-bottom: 10px;">About Me</h1>
+                <p>
+                    I love programming. My field of Interest's are building new  Web Technologies and Products.
+                    I am fluent in Java and Javascript </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front end</span><br>React, Redux, JavaScript, HTML/CSS</li>
+                        <li><span>Back end</span><br>Nodejs</li>
+                        <li><span>Database</span><br>SQL, MongoDB</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Full Stack Web Developer Intern -Devtown</span><br><p style="margin-top: 10px;">Worked with react.js and node.js developed some basic fundamental projects like to-do list and learned how to design and build databases for software applications, create and deploy database-backed web APIs, and secure and manage user authentication and access control for an application backend.</p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College</span><br>
+                            BE- Computer Science and engineering</li>
+                        <li><span>Nazareth Matriculation Higher Secondary School</span><br>Class 10 & 12</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------services------------------------------- -->
+<!-- --------------------------portfolio----------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/dhinesh-ecommerce.vercel.app_.png" alt="">
+                <div class="layer">
+                    <h3>E-commerce Website</h3>
+                    <p class="work-layer-link">Fully functional website with add and delete product features. Built using MERN stack and 
+                        chakra UI. Had a deep understanding on how web application works and how to develop a fully 
+                        functional web application from scratch</p>
+                    <a href="https://dhinesh-ecommerce.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/moviedb-murex.vercel.app_.png" alt="">
+                <div class="layer">
+                    <h3>Movie App</h3>
+                    <p class="work-layer-link">You can get all new movie updates in one place. This is a CSS project backed with 
+                        themoviedb.org API.</p>
+                    <a href="https://moviedb-murex.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/mdhinesh.github.io_To-Do-List_.png" alt="">
+                <div class="layer">
+                    <h3>Todo list App</h3>
+                    <p class="work-layer-link">Basic To-Do List Application, uses local storage.</p>
+                    <a href="https://mdhinesh.github.io/To-Do-List/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -------------------------contact--------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mdhinesh3103s@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/Dhinesh_M_"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/mdhinesh"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dhineshm615/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/dhinesh615/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Dhinesh. Made with ❤️ by Dhinesh</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzam6W0LEflQihi6pvppkvzj3QzVxyx-FOpEV0gk7IGXhxyoru2w44a-fQ9Nkq_St2biw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
